@@ -7,6 +7,7 @@ import Feed from "../components/Feed";
 import { useRecoilState } from "recoil";
 import { modalState } from "../atoms/modalAtom";
 import Widgets from "../components/Widgets";
+import { AppProps } from "next/app";
 
 export default function Home({ trendingResults, followResults, providers }) {
   const { data: session } = useSession();
